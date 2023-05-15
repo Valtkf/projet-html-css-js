@@ -14,6 +14,7 @@
 :root {
     --bg-color: #202123;
     --second-bg-color:  #202123;
+    --third-bg-color: #26272a;
     --text-color: #ededed;
     --main-color: #00abf0;
 }
@@ -368,7 +369,7 @@ span {
     left: 0;
     width: 0;
     height: 100%;
-    background: red;
+    background: var(--main-color);
     z-index: -1;
     transition: .5s;
 }
@@ -394,4 +395,25 @@ span {
 .education-content .content p {
     font-size: 1.6rem;
     padding-top: .5rem;
+}
+
+.skills {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: var(--third-bg-color);
+}
+
+.skills .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.skills-row .skills-column {
+    flex: 1 1 40rem;
+}
+
+.skills-column .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
 }
